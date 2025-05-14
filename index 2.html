@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>مكتبة الكتب المصرية</title>
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      direction: rtl;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      padding: 40px 20px;
+    }
+    .hero {
+      text-align: center;
+      background-color: #ecf0f1;
+      padding: 30px;
+      border-radius: 8px;
+      margin-bottom: 40px;
+    }
+    .hero h2 {
+      margin-bottom: 10px;
+    }
+    .books h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .book-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 20px;
+    }
+    .book-card {
+      background-color: white;
+      border-radius: 8px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .book-card:hover {
+      transform: scale(1.05);
+    }
+    .book-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+    .book-card h3 {
+      margin: 10px 0 5px;
+      font-size: 16px;
+      color: #34495e;
+    }
+    .book-card p {
+      font-size: 14px;
+      color: #777;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2c3e50;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>مكتبة الكتب المصرية</h1>
+    <nav>
+      <ul>
+        <li><a href="#الرئيسية">الرئيسية</a></li>
+        <li><a href="#الكتب">الكتب</a></li>
+        <li><a href="#" title="مش لازم والله" >عن المكتبة</a></li>
+        <li><a href="https://www.facebook.com/MarwanAhmedOmr?">تواصل معنا</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="الرئيسية" class="hero">
+      <h2>مرحبًا بكم في مكتبة الهواري!</h2>
+      <p>اكتشف مجموعة من أعظم الكتب المصرية.</p>
+    </section>
+
+    <section class="books">
+      <h>The Books</h2>
+      <div class="book-list">
+        <!-- بعض الكتب الشهيرة مع صور رمزية من Unsplash -->
+        <!-- كررنا النموذج لتشمل 50 كتابًا -->
+        <!-- يمكنك استبدال الصور أو تعديل النصوص لاحقًا -->
+        <!-- أمثلة فقط -->
+        <div id="الكتب" class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,1" alt="كتاب">
+          <h3><a href="https://ar.wikipedia.org/wiki/%D8%B9%D9%85%D8%A7%D8%B1%D8%A9_
+            %D9%8A%D8%B9%D9%82%D9%88%D8%A8%D9%8A%D8%A7%D9%86_(%D8%B1%D9%88%D8%A7%D9%8A%D8%A9)"
+             target="_blank" title="go to novel">عمارة يعقوبيان</a></h3>
+          <p>علاء الأسواني</p>
+        </div>
+        <div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,2" alt="كتاب">
+          <h3><a href="https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%AB%D9%84%D8%A7%D8%AB%D9%8A%D8%A9_(%D9%86%D8%AC%D9%8A%D8%A8_%D9%85%D8%AD%D9%81%D9%88%D8%B8)"
+            target="_blank" title="go to novel" >ثلاثية نجيب محفوظ</a></h3>
+          <p>نجيب محفوظ</p>
+        </div>
+        <div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,3" alt="كتاب">
+          <h3><a href="https://ar.wikipedia.org/wiki/%D8%B4%D9%8A%D9%83%D8%A7%D8%AC%D9%88_(%D8%B1%D9%88%D8%A7%D9%8A%D8%A9)"
+            target="_blank" title="go to novel">شيكاجو</a></h3>
+          <p>علاء الأسواني</p>
+        </div>
+        <div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,4" alt="كتاب">
+          <h3><a href="https://ar.wikipedia.org/wiki/%D8%A3%D9%88%D9%84%D8%A7%D8%AF_%D8%AD%D8%A7%D8%B1%D8%AA%D9%86%D8%A7"
+            target="_blank" title="go to novel">اولاد حارتنا</a></h3>
+          <p>نجيب محفوظ</p>
+        </div>
+        <div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,5" alt="كتاب">
+          <h3><a href="https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%84%D8%B5_%D9%88%D8%A7%D9%84%D9%83%D9%84%D8%A7%D8%A8_(%D8%B1%D9%88%D8%A7%D9%8A%D8%A9)"
+            target="_blank" title="go to novel">اللص والكلاب</a></h3>
+          <p>نجيب محفوظ</p>
+        </div>
+        <!-- بإمكانك تكرار النموذج السابق مع تغيير المحتوى -->
+        <!-- سأكمل حتى أصل لـ 50 -->
+        <!-- يمكنك لصق هذا النموذج مع تغيير الرقم في الصورة والعنوان والمؤلف -->
+        <!-- لتسريع التجربة، كرر النموذج التالي 45 مرة مع التغيير -->
+        <!-- مثال: -->
+        <!-- نسخ من هنا -->
+        <!-- عدد 45 كتاب إضافي -->
+        <!-- BEGIN BULK -->
+        <!-- للتوفير، سأنسخ 5 أخرى فقط كمثال وأرسل لك ملف مضغوط لاحقاً إن أردت الكل -->
+        <div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,6" alt="كتاب">
+          <h3><a href="https://ar.wikipedia.org/wiki/%D8%AD%D8%AF%D9%8A%D8%AB_%D8%A7%D9%84%D8%B5%D8%A8%D8%A7%D8%AD_%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%A1"
+            target="_blank" title="go to novel">حديث الصباح والمساء</a></h3>
+          <p>نجيب محفوظ</p>
+        </div>
+        <div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,7" alt="كتاب">
+          <h3><a href="https://ar.wikipedia.org/wiki/%D9%85%D9%88%D8%B3%D9%85_%D8%A7%D9%84%D9%87%D8%AC%D8%B1%D8%A9_%D8%A5%D9%84%D9%89_%D8%A7%D9%84%D8%B4%D9%85%D8%A7%D9%84"
+          target="_blank" title="go to novel" >موسم الهجرة الى الشمال</a></h3>
+          <p>الطيب صالح</p>
+        </div>
+        <div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,8" alt="كتاب">
+          <h3><a href="https://ar.wikipedia.org/wiki/%D9%81%D9%8A_%D8%A8%D9%8A%D8%AA%D9%86%D8%A7_%D8%B1%D8%AC%D9%84_(%D8%B1%D9%88%D8%A7%D9%8A%D8%A9)"
+           target="_blank" title="go to novel" >فى بيتنا راجل</a></h3>
+          <p>إحسان عبد القدوس</p>
+        </div>
+        <div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,9" alt="كتاب">
+          <h3><a href="https://ar.wikipedia.org/wiki/%D8%B1%D8%A3%D9%8A%D8%AA_%D8%B1%D8%A7%D9%85_%D8%A7%D9%84%D9%84%D9%87"
+           target="_blank" title="go to novel" >رأت رام الله</a></h3>
+          <p>مريد البرغوثي</p>
+        </div>
+        <div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://ar.wikipedia.org/wiki/%D8%B2%D9%82%D8%A7%D9%82_%D8%A7%D9%84%D9%85%D8%AF%D9%82"
+          target="_blank" title="go to novel" >زقاق المدق</a></h3>
+          <p>نجيب محفوظ</p>
+        </div>
+        <div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://www.google.com.eg/books/edition/%D8%A7%D9%84%D9%83%D8%B1%D9%86%D9%83/ueGREAAAQBAJ?hl=ar&gbpv=0&kptab=getbook"
+          target="_blank" title="go to novel" >الكرنك</a></h3>
+          <p>نجيب محفوظ</p> 
+        </div>
+        <div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://www.google.com.eg/books/edition/%D8%A7%D9%84%D8%AD%D8%B1%D8%A7%D9%81%D9%8A%D8%B4/R8VvEAAAQBAJ?hl=ar&gbpv=0"
+          target="_blank" title="go to novel" >الحرافيش</a></h3>
+          <p>نجيب محفوظ</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%85%D8%B1%D8%A7%D9%8A%D8%A7"
+          target="_blank" title="go to novel" >المرايا</a></h3>
+          <p>نجيب محفوظ</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://www.google.com.eg/books/edition/%D8%AB%D8%B1%D8%AB%D8%B1%D8%A9_%D9%81%D9%88%D9%82_%D8%A7%D9%84%D9%86%D9%8A%D9%84/7BV2EAAAQBAJ?hl=ar&gbpv=0"
+          target="_blank" title="go to novel">ثرثرة فوق النيل</a></h3>
+          <p>نجيب محفوظ</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://www.google.com.eg/books/edition/%D8%B9%D9%88%D8%AF%D8%A9_%D8%A7%D9%84%D8%B1%D9%88%D8%AD/r6POEAAAQBAJ?hl=ar&gbpv=0"
+          target="_blank" title="go to novel">عودة الروح</a></h3>
+          <p>توفيق الحكيم</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://www.google.com.eg/books/edition/%D9%8A%D9%88%D9%85%D9%8A%D8%A7%D8%AA_%D9%86%D8%A7%D8%A6%D8%A8_%D9%81%D9%8A_%D8%A7%D9%84%D8%A3%D8%B1%D9%8A%D8%A7/fN3LEAAAQBAJ?hl=ar&gbpv=0"
+          target="_blank" title="go to novel" >يوميات نائب الارياف</a></h3>
+          <p>توفيق الحكيم</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://www.google.com.eg/books/edition/%D8%A3%D9%87%D9%84_%D8%A7%D9%84%D9%83%D9%87%D9%81/kWPNEAAAQBAJ?hl=ar&gbpv=0"
+          target="_blank" title="go to novel" >اهل الكهف</a></h3>
+          <p>توفيق الحكيم</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://www.google.com.eg/books/edition/%D8%A7%D9%84%D8%B3%D9%84%D8%B7%D8%A7%D9%86_%D8%A7%D9%84%D8%AD%D8%A7%D8%A6%D8%B1/2bzREAAAQBAJ?hl=ar&gbpv=0"
+          target="_blank" title="go to novel" >السلطان الحائر</a></h3>
+          <p>توفيق الحكيم</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://www.google.com.eg/books/edition/%D8%A7%D9%84%D8%AD%D8%B1%D8%A7%D9%85/QTU1EAAAQBAJ?hl=ar&gbpv=0"
+          target="_blank" title="go to novel" >الحرام</a></h3>
+          <p>يوسف ادريس</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://www.google.com.eg/books/edition/%D8%A7%D9%84%D8%B9%D9%8A%D8%A8/NhgvEAAAQBAJ?hl=ar&gbpv=0"
+          target="_blank" title="go to novel" >العيب</a></h3>
+          <p>يوسف ادريس</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://www.google.com.eg/books/edition/%D8%AC%D9%85%D9%87%D9%88%D8%B1%D9%8A%D8%A9_%D9%81%D8%B1%D8%AD%D8%A7%D8%AA/mNsxEAAAQBAJ?hl=ar&gbpv=0"
+          target="_blank" title="go to novel" >جمهورية فرحات</a></h3>
+          <p>يوسف ادريس</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://www.google.com.eg/books/edition/%D9%82%D8%A7%D8%B9_%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9/ms8SEQAAQBAJ?hl=ar&gbpv=0"
+          target="_blank" title="go to novel" >قاع المدينة</a></h3>
+          <p>يوسف ادريس</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://www.google.com.eg/books/edition/%D8%A7%D9%84%D8%A3%D9%8A%D8%A7%D9%85/PQcREQAAQBAJ?hl=ar&gbpv=0"
+          target="_blank" title="go to novel" >الأيام</a></h3>
+          <p>طه حسين</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://www.google.com.eg/books/edition/%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84_%D8%A7%D9%84%D8%AB%D9%82%D8%A7%D9%81%D8%A9_%D9%81%D9%8A_%D9%85%D8%B5%D8%B1/0qeCEAAAQBAJ?hl=ar&gbpv=0"
+          target="_blank" title="go to novel" >مستقبل الثقافة في مصر</a></h3>
+          <p>طه حسين</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://ar.wikipedia.org/wiki/%D8%B9%D9%84%D9%89_%D9%87%D8%A7%D9%85%D8%B4_%D8%A7%D9%84%D8%B3%D9%8A%D8%B1%D8%A9"
+          target="_blank" title="go to novel" >على هامش السيرة</a></h3>
+          <p>طه حسين</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://www.google.com.eg/books/edition/%D8%AD%D8%AF%D9%8A%D8%AB_%D8%A7%D9%84%D8%A3%D8%B1%D8%A8%D8%B9%D8%A7%D8%A1/ZsGAEAAAQBAJ?hl=ar&gbpv=0"
+          target="_blank" title="go to novel" >حديث الاربعاء</a></h3>
+          <p>طه حسين</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://www.google.com.eg/books/edition/%D8%A7%D9%84%D9%84%D9%87/E6qCEAAAQBAJ?hl=ar&gbpv=0"
+          target="_blank" title="go to novel" >الله</a></h3>
+          <p>عباس محمود العقاد</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://www.google.com.eg/books/edition/%D8%A5%D8%A8%D9%84%D9%8A%D8%B3/v6I8DwAAQBAJ?hl=ar&gbpv=0"
+          target="_blank" title="go to novel" >ابليس</a></h3>
+          <p>عباس محمود العقاد</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://www.google.com.eg/books/edition/%D9%8A%D9%88%D9%85_%D8%AD%D9%88%D9%84_%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85_200/sjzACQAAQBAJ?hl=ar&gbpv=0"
+          target="_blank" title="go to novel" >حول العالم في 200 يوم</a></h3>
+          <p>أنيس منصور</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://www.google.com.eg/books/edition/%D8%A7%D9%84%D8%B0%D9%8A%D9%86_%D9%87%D8%A8%D8%B7%D9%88%D8%A7_%D9%85%D9%86_%D8%A7%D9%84%D8%B3%D9%85%D8%A7%D8%A1/IK_tCgAAQBAJ?hl=ar&gbpv=0"
+          target="_blank" title="go to novel" >الذين هبطوا من السماء</a></h3>
+          <p>انيس منصور</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://foulabook.com/ar/read/%D8%AA%D8%AD%D9%85%D9%8A%D9%84-%D8%A3%D8%AD%D9%84%D8%A7%D9%85-%D9%81%D8%AA%D8%B1%D8%A9-%D8%A7%D9%84%D9%86%D9%82%D8%A7%D9%87%D8%A9-pdf"
+          target="_blank" title="go to novel" >احلام فترة النقاهة</a></h3>
+          <p>نجيب محفوظ</p>
+        </div><div class="book-card">
+         <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://www.google.com.eg/books/edition/%D9%81%D9%89_%D8%A7%D9%84%D8%B4%D8%B9%D8%B1_%D8%A7%D9%84%D8%AC%D8%A7%D9%87%D9%84%D9%89/RafoEAAAQBAJ?hl=ar&gbpv=0"
+          target="_blank" title="go to novel" >الشعر الجاهلي</a></h3>
+          <p>طه حسين</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://foulabook.com/ar/read/%D9%84%D9%8A%D9%84%D9%89-%D9%88%D8%A7%D9%84%D9%85%D8%AC%D9%86%D9%88%D9%86-pdf"
+          target="_blank" title="go to novel" >ليلي والمجنون</a></h3>
+          <p>صلاح عبدالصبور</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://ar.wikipedia.org/wiki/%D8%B4%D8%B1%D9%82_%D8%A7%D9%84%D9%85%D8%AA%D9%88%D8%B3%D8%B7_(%D8%B1%D9%88%D8%A7%D9%8A%D8%A9)"
+          target="_blank" title="go to novel" >شرق المتوسط</a></h3>
+          <p>عبدالرحمن منيف</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://www.google.com.eg/books/edition/%D8%B4%D9%8A%D8%A1_%D9%85%D9%86_%D8%A7%D9%84%D8%AE%D9%88%D9%81/wgw0EAAAQBAJ?hl=ar&gbpv=0"
+          target="_blank" title="go to novel" >شئ من الخوف</a></h3>
+          <p>ثروت اباظة</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://www.google.com.eg/books/edition/%D9%83%D9%81%D8%A7%D8%AD_%D8%B7%D9%8A%D8%A8%D8%A9/3oStEAAAQBAJ?hl=ar&gbpv=0"
+          target="_blank" title="go to novel" >كفاح طيبة</a></h3>
+          <p>نجيب محفوظ</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://www.google.com.eg/books/edition/%D8%A3%D8%B1%D8%AE%D8%B5_%D9%84%D9%8A%D8%A7%D9%84%D9%8A/nXCAEAAAQBAJ?hl=ar&gbpv=0"
+          target="_blank" title="go to novel" >ارخص ليالي</a></h3>
+          <p>يوسف ادريس</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://www.google.com.eg/books/edition/%D8%A7%D9%84%D8%BA%D8%B1%D9%8A%D8%A8/GrTfDwAAQBAJ?hl=ar&gbpv=0"
+          target="_blank" title="go to novel" >الغريب</a></h3>
+          <p>ألبير كامو</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://www.hindawi.org/books/38269262/8/"
+          target="_blank" title="go to novel" >القاهرة 30</a></h3>
+          <p>نجيب محفوظ</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://www.google.com.eg/books/edition/%D8%A7%D9%84%D9%81%D9%8A%D9%84_%D8%A7%D9%84%D8%A3%D8%B2%D8%B1%D9%82/M-9tDQAAQBAJ?hl=ar&gbpv=0"
+          target="_blank" title="go to novel" >الفيل الازرق</a></h3>
+          <p>احمد مراد</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://foulabook.com/ar/read/%D8%AA%D8%AD%D9%85%D9%8A%D9%84-1919-pdf"
+          target="_blank" title="go to novel" >1919</a></h3>
+          <p>احمد مراد</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://www.google.com.eg/books/edition/%D8%A3%D8%B1%D8%B6_%D8%A7%D9%84%D8%A5%D9%84%D9%87/jJTbCwAAQBAJ?hl=ar&gbpv=0"
+          target="_blank" title="go to novel" >أرض الأله</a></h3>
+          <p>احمد مراد</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://www.google.com.eg/books/edition/%D9%87%D9%8A%D8%A8%D8%AA%D8%A7/Lb1VDwAAQBAJ?hl=ar&gbpv=0"
+          target="_blank" title="go to novel" >هيبتنا</a></h3>
+          <p>محمد صادق</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://www.google.com.eg/books/edition/%D9%81%D9%8A_%D9%82%D9%84%D8%A8%D9%8A_%D8%A3%D9%86%D8%AB%D9%89_%D8%B9%D8%A8%D8%B1%D9%8A%D8%A9/exdnDQAAQBAJ?hl=ar&gbpv=0"
+          target="_blank" title="go to novel" >في قلبي انثي عبرية</a></h3>
+          <p>خولة حمدي</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://www.google.com.eg/books/edition/%D8%B9%D8%B5%D9%81%D9%88%D8%B1_%D9%85%D9%86_%D8%A7%D9%84%D8%B4%D8%B1%D9%82/j5rXEAAAQBAJ?hl=ar&gbpv=0"
+          target="_blank" title="go to novel" >عصفور من الشرق</a></h3>
+          <p>توفيق الحكيم</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://www.google.com.eg/books/edition/%D8%B4%D8%B1%D9%81/IPEMEQAAQBAJ?hl=ar&gbpv=0"
+          target="_blank" title="go to novel" >شرف</a></h3>
+          <p>صنع الله ابراهيم</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://www.google.com.eg/books/edition/%D8%A8%D9%8A%D8%B1%D9%88%D8%AA_%D8%A8%D9%8A%D8%B1%D9%88%D8%AA/R62aEAAAQBAJ?hl=ar&gbpv=0"
+          target="_blank" title="go to novel" >بيروت بيروت</a></h3>
+          <p>صنع الله ابراهيم</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://www.hindawi.org/contributors/17162047/"
+          target="_blank" title="go to novel" >الافيال</a></h3>
+          <p>صنع الله ابراهيم</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://www.google.com.eg/books/edition/%D9%81%D9%8A_%D8%B5%D8%A7%D9%84%D9%88%D9%86_%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%AF_%D9%83%D8%A7%D9%86%D8%AA_%D9%84/zDe8DAAAQBAJ?hl=ar&gbpv=0"
+          target="_blank" title="go to novel" >في صالون العقاد كان لنا أيام</a></h3>
+          <p>انيس منصور</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://www.google.com.eg/books/edition/%D8%B9%D8%A8%D9%82%D8%B1%D9%8A%D8%A9_%D9%85%D8%AD%D9%85%D8%AF/QWyAEAAAQBAJ?hl=ar&gbpv=0"
+          target="_blank" title="go to novel" >عبقرية محمد</a></h3>
+          <p>عباس محمود العقاد</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://www.google.com.eg/books/edition/%D8%B9%D8%A8%D9%82%D8%B1%D9%8A%D8%A9_%D8%B9%D9%85%D8%B1/DKeCEAAAQBAJ?hl=ar&gbpv=0"
+          target="_blank" title="go to novel" >عبقرية عمر</a></h3>
+          <p>عباس محمود العقاد</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://foulabook.com/ar/read/%D8%A3%D9%88%D8%B1%D8%A7%D9%82-%D8%B4%D8%A7%D8%A8-%D8%B9%D8%A7%D8%B4-%D9%85%D9%86%D8%B0-%D8%A3%D9%84%D9%81-%D8%B9%D8%A7%D9%85-pdf"
+          target="_blank" title="go to novel" >اوراق شاب عاش منذ ألف عام</a></h3>
+          <p>انيس منصور</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://foulabook.com/ar/read/%D8%A7%D9%84%D8%A8%D8%AD%D8%AB-%D8%B9%D9%86-%D9%88%D9%84%D9%8A%D8%AF-%D9%85%D8%B3%D8%B9%D9%88%D8%AF-pdf"
+          target="_blank" title="go to novel" >البحث عن وليد مسعود</a></h3>
+          <p>جبرا ابراهيم جبرا</p>
+        </div><div class="book-card">
+          <img src="https://source.unsplash.com/200x300/?book,10" alt="كتاب">
+          <h3><a href="https://www.google.com.eg/books/edition/%D8%B1%D8%A3%D9%8A%D8%AA_%D9%81%D9%8A%D9%85%D8%A7_%D9%8A%D8%B1%D9%89_%D8%A7%D9%84%D9%86%D8%A7%D8%A6%D9%85/ybSbEAAAQBAJ?hl=ar&gbpv=0"
+          target="_blank" title="go to novel" >رأيت فيما يرى النائم</a></h3>
+          <p>نجيب محفوظ</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 مكتبة الكتب - جميع الحقوق محفوظة</p>
+  </footer>
+</body>
+</html>
